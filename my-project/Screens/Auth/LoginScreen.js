@@ -93,7 +93,7 @@ export const LoginScreen = ({ navigation }) => {
                 onLayout={() => setIsShowKeyboard(true)}
                 style={{
                   ...styles.inputForm,
-                  marginBottom: isShowKeyboard ? 45 : 300,
+                  marginBottom: isShowKeyboard ? 20 : 300,
                   width: dimensions,
                 }}
               >
@@ -132,14 +132,14 @@ export const LoginScreen = ({ navigation }) => {
                 <TouchableOpacity activeOpacity={0.8} style={styles.button}>
                   <Text style={styles.btnTitle}>Войти</Text>
                 </TouchableOpacity>
-                <View>
+                <TouchableOpacity activeOpacity={0.8}>
                   <Text
                     style={styles.text}
                     onPress={() => navigation.navigate("Register")}
                   >
                     Нет аккаунта? Зарегистрироваться
                   </Text>
-                </View>
+                </TouchableOpacity>
               </View>
             </View>
           </KeyboardAvoidingView>

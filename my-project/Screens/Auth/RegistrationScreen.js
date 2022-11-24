@@ -132,14 +132,14 @@ export const RegistrationScreen = ({ navigation }) => {
                 <TouchableOpacity activeOpacity={0.6} style={styles.button}>
                   <Text style={styles.btnTitle}>Зарегистрироваться</Text>
                 </TouchableOpacity>
-                <View>
+                <TouchableOpacity activeOpacity={0.8}>
                   <Text
                     style={styles.text}
                     onPress={() => navigation.navigate("Login")}
                   >
                     Уже есть аккаунт? Войти
                   </Text>
-                </View>
+                </TouchableOpacity>
               </View>
             </View>
           </KeyboardAvoidingView>
